@@ -5,7 +5,7 @@ import Hero from "../components/HomePageComponent/Hero";
 const Home = () => {
   return (
     <>
-      <div>
+      <div className="relative">
         <Navbar />
         <Hero />
       </div>
