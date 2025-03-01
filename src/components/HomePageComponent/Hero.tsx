@@ -1,4 +1,4 @@
-
+import { lazy } from 'react'
 import { Link } from 'react-router-dom'
 import Button from '../Button'
 import hero3 from '../../assets/hero3.jpg'
@@ -22,11 +22,11 @@ const Hero = () => {
           </div>
           <div className="flex flex-row  gap-5 ">
             <div className="image1">
-              <img src={hero3} className="h-96 rounded-2xl transition-transform duration-300 hover:scale-105 object-cover" alt="" />
+              <img src={hero3} className="h-96 rounded-2xl transition-transform duration-300 hover:scale-105 object-cover" alt="" loading='lazy' />
             </div>
             <div className="image2 flex flex-col gap-3">
-              <img src={hero1} className="h-44 transition-transform duration-300 hover:scale-105 rounded-2xl object-cover" alt="" />
-              <img src={hero2} className="h-48 transition-transform duration-300 hover:scale-105 rounded-2xl object-cover" alt="" />
+              <img src={hero1} className="h-44 transition-transform duration-300 hover:scale-105 rounded-2xl object-cover" alt="" loading='lazy' />
+              <img src={hero2} className="h-48 transition-transform duration-300 hover:scale-105 rounded-2xl object-cover" alt="" loading='lazy' />
             </div>
           </div>
         </div>
